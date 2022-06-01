@@ -63,6 +63,21 @@
     z-index: -1;
 }
 
+
+@media (max-width: 700px){
+    .header-title p{
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .btn{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
 @media (min-aspect-ratio: 16/9) {
     .video{
         min-width: 100%;
