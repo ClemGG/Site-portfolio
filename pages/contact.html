@@ -1,0 +1,108 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="header">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">A PROPOS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-title">
+            <h1>CONTACT</h1>
+        </div>
+
+
+    </section>
+
+
+    <section class="contact-us">
+        <div class="column">
+            <div class="contact-col">
+                
+                <h2>Suivez-moi sur les réseaux sociaux !</h2>
+
+                <div class="icons">
+                    <a href="https://twitter.com/Quasar47U" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCOsUV9D5o0v5RiIK2124xcA" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/clement-guichard-36676817a/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/ClemGG" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-col">
+    
+                <h2>Ou contactez-moi par mail !</h2>
+
+                <!--Crée une interface pour laisser le client envoyer des messages-->
+                <form class="comment-form" action="form-handler.php" method="post">
+                    <!-- <form  action="form-handler.php" method="post"> -->
+                    <input type="text" name="name" placeholder="Votre nom..." required>
+                    <input type="email" name="email" placeholder="Votre adresse mail..." required>
+                    <input type="text" name="subject" placeholder="Objet..." required>
+                    <textarea rows="8" name="message" placeholder="Votre message..." required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+    
+            </div>
+        </div>
+    </section>
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

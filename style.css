@@ -4,9 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*INDEX*/
 
-.header{
+body{
+    background: black;
+}
+
+
+
+/*----- INDEX -----*/
+
+.home{
     height: 100vh;
     width: 100%;
 
@@ -17,17 +24,17 @@
     justify-content: center;
 }
 
-.header-title{
+.home-title{
     text-align: center;
     color: white;
 }
 
-.header-title h1{
+.home-title h1{
     font-size: 50px;
     font-weight: 600;
 }
 
-.header-title p{
+.home-title p{
     font-size: 30px;
     font-weight: 200;
     margin-bottom: 50px;
@@ -65,7 +72,7 @@
 
 
 @media (max-width: 700px){
-    .header-title p{
+    .home-title p{
         font-size: 20px;
         font-weight: 200;
         margin-bottom: 50px;
@@ -90,5 +97,216 @@
         min-height: 100%;
         width: auto;
         height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- NAV LINKS HEADER -----*/
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between; /*Indique comment l'espace entre les éléments doit être réparti*/
+    align-items: center;
+}
+
+
+/*Spécifie un type d'élément précis dans la classe nav*/
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1; /*Pour le faire occuper tout l'espace de la ligne*/
+    text-align: left;
+}
+
+.nav-links ul li{
+    list-style: none;       /*N'affiche pas les puces de la liste*/
+    display: inline-block;  /*Affiche la liste horizontalement*/
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/*Affiche une ligne sous l'élément.*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;          /*La largeur est à 0% car elle sera animée quand la souris survolera l'élément.*/
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;   /*Durée de l'animation*/
+}
+
+/*Crée une animation sur la ligne sous les boutons quand la souris survole l'élément.*/
+/** Attention : Ne pas mettre la transition ici car la ligne repassera
+ ** directement à 0% au lieu de faire la transition en sens inverse*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*Cache les boutons croix et menu de la version PC du site*/
+nav .fa{
+    display: none;
+}
+
+
+/*Le code dans ce @media sera appliqué à tous les écrans dont la largeur <= 700px*/
+@media(max-width: 700px){
+
+    .nav-links ul li{    
+        display: block;  
+    }
+
+    /*Pour les mobiles, on met la liste dans un panel qu'on cachera avec un bouton*/
+    .nav-links{
+        position: fixed; /*fixed au lieu de absolute pour enlever la barre de défilement horizontale*/
+        background: #3d3d3d;
+        color: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px;    /*Pour qu'il soit caché au début de l'animation*/
+        text-align: left;
+        z-index: 2;     /*Fait passer la liste devant le reste*/
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 10px 10px;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----- CONTACT -----*/
+
+
+
+.header{
+    background: transparent;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/icones/banniere.jpg);
+    
+    /* background-repeat: no-repeat;*/
+    background-position: center;
+}
+
+.header h1{
+    margin: 100px 0 100px;
+    padding-bottom: 50px;
+}
+
+.column{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-col{
+    margin-bottom: 100px;
+}
+
+
+h2{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+
+.icons{
+    margin-bottom: 40px;
+}
+
+.icons .fa{
+    font-size: 50px;
+    color: white;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+
+/*Donne juste un autre CSS au formulaire.*/
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: #3d3d3d;
+    color: #bcbcbc;
+
+}
+
+
+
+.comment-form button{
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Le code dans ce @media sera appliqué à tous les écrans dont la largeur <= 700px*/
+@media(max-width: 700px){
+
+    .column{
+        width: 90%;
+    }
+
+        
+    .icons .fa{
+        margin-right: 10px;
     }
 }
