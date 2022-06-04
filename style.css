@@ -44,6 +44,7 @@ body{
 
 .btn{
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
     background: transparent;
@@ -309,4 +310,109 @@ h2{
     .icons .fa{
         margin-right: 10px;
     }
+}
+
+
+/*---- PORTFOLIO -----*/
+
+
+
+
+.pf-title{
+    margin: 0 50px 50px 50px;
+}
+
+.pf-title h2{
+    color: #515151;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.pf-title h2::after{
+
+    /*Ajoute un ligne sous le titre qui prend toute la div*/
+    content: '';
+    height: 2px;
+    background: #515151;
+    display: block;
+}
+
+
+
+
+.pf-grid{
+    display: grid;
+    margin: 0 100px 100px 100px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1em;
+}
+
+.pf-btn{
+    position: relative;
+}
+
+.pf-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.pf-layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.pf-layer:hover{
+    background: rgba(4, 9, 30, 0.85);
+}
+
+
+.pf-layer h3{
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: 0.5s;
+}
+
+.pf-layer:hover h3{
+    opacity: 1;
+    bottom: 60%;
+}
+
+
+.pf-layer h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #a1a1a1;
+    opacity: 0;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: 0.5s;
+}
+
+.pf-layer:hover h4{
+    opacity: 1;
+    bottom: 35%;
 }

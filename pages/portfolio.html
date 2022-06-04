@@ -1,0 +1,234 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="header">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">A PROPOS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-title">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+
+    </section>
+
+    <section class="portfolio">
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>3D GAMES</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>2D GAMES</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>UNITY EDITOR TOOLS</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>APPS & 3D SIMULATIONS</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/as_img_page.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020 <br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
