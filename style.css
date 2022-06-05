@@ -230,7 +230,7 @@ nav .fa{
 
 
 
-.header{
+#header-pf{
     background: transparent;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/icones/banniere.jpg);
     
@@ -427,4 +427,33 @@ h2{
 .pf-layer:hover h4{
     opacity: 1;
     bottom: 35%;
+}
+
+@media(max-width: 700px){
+    
+    .pf-title h2{
+        font-size: 25px;
+    }
+
+    .pf-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    
+    .pf-btn{
+        width: 100%;
+        height: 25vh;
+    }
+
+    
+    .pf-layer{
+        background: rgba(4, 9, 30, 0.5);
+    }
+
+        
+    .pf-layer h3{
+        font-size: 20px;
+        opacity: 1;
+    }
 }
