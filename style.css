@@ -238,8 +238,10 @@ nav .fa{
     background-position: center;
 }
 
+
+
 .header h1{
-    margin: 100px 0 100px;
+    margin: 100px 0;
     padding-bottom: 50px;
 }
 
@@ -350,12 +352,21 @@ h2{
 
 .pf-btn{
     position: relative;
+    overflow: hidden;   /*Pour cacher les bordures d'images qd on les agrandit*/
+    width: 100%;
+    height: 55vh;
 }
 
 .pf-btn img{
     width: 100%;
-    height: 55vh;
+    height: 100%;
     object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.pf-btn:hover img{
+    transform: scale(110%);
 }
 
 
