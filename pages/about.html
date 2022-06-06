@@ -1,0 +1,253 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="header" id="header-about">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">A PROPOS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-title">
+            <h1>A PROPOS</h1>
+        </div>
+
+
+    </section>
+
+    <section class="portfolio">
+        
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>JEUX 3D</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-as.html">
+                        <img src="../images/as/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020<br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-hock.html">
+                        <img src="../images/hock/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>HOCK CINEMA</h3>
+                            <h4>2020<br>
+                                Evoluez dans un cinéma angoissant datant des années 30. <br>
+                                Pour survivre, ne comptez pas seulement sur vos sens...</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-rdrift.html">
+                        <img src="../images/rdrift/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>R DRIFT</h3>
+                            <h4>2020<br>
+                                Courez contre la montre (mais aussi la rage !) dans ce jeu de plateforme <br>
+                                réalisé pour la Brackeys Game Jam n°3.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-runner.html">
+                        <img src="../images/runner/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>PAINT RUNNER</h3>
+                            <h4>2019<br>
+                                Un Endless Runner sur le thème "Passage" réalisé pour l'Extra Credits Game Jam n°5.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-tower.html">
+                        <img src="../images/tower/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>LA COMMUNE</h3>
+                            <h4>2018<br>
+                                Combattez les Maraudeurs volant les ressources de la Commune dans ce <br>
+                                jeu de défense se déroulant dans une Russie post-ère glaciaire.</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>JEUX 2D</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-zigomar.html">
+                        <img src="../images/zigomar/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>MISSION ZIGOMAR</h3>
+                            <h4>2020<br>
+                                En route pour les musées de la ville de Paris ! Parcourez l'histoire de France <br>
+                                et tentez de déjouer les plans du terrible Zigomar !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-star.html">
+                        <img src="../images/star/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>SHINING STAR</h3>
+                            <h4>2019<br>
+                                Un jeu de réflexion et d'obstacles réalisé pour la GMTK Game Jam 2019.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-fungi.html">
+                        <img src="../images/fungi/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>FUNGI PARTY</h3>
+                            <h4>2019<br>
+                                Rassasiez le vieux roi Fungi dans ce jeu d'arcade inspiré du cultissime Snake !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-tank.html">
+                        <img src="../images/tank/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>GEOMETRY TANKS</h3>
+                            <h4>2019<br>
+                                Plongez au coeur d'un combat d'arène multijoueur dans cet hommage nostalgique <br>
+                                aux anciens jeux Flash de combat d'arène des années 2000.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-hack.html">
+                        <img src="../images/hack/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>HACK THE PLANET</h3>
+                            <h4>2019<br>
+                                Une révolution se prépare. Cette République vacillante veut faire taire <br>
+                                les voix dissidentes. Mais les choses ne doivent pas forcément en être ainsi...</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>OUTILS D'EDITEUR UNITY</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-dialogue.html">
+                        <img src="../images/dialogue/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>DIALOGUE NODE SYSTEM</h3>
+                            <h4>2021<br>
+                                Un système intuitif de création de dialogues par node pour Unity.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="portfolio/pf-toon-shader.html">
+                        <img src="../images/toon-shader/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>TOON EDGE SHADER</h3>
+                            <h4>2020<br>
+                                Une série de shaders toon mimiquant un effet crayonné <br>
+                                et des ombres colorées, inspirés du jeu Sonic Riders.</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>APPLICATIONS & SIMULATIONS 3D</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="portfolio/pf-gisante.html">
+                        <img src="../images/gisante/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>GISANTE JEANNE DE MANTES</h3>
+                            <h4>2020<br>
+                                Une application réalisée pour l'inauguration d'une exposition <br>
+                                sur Jeannes de Mantes au Musée des Augustins de Toulouse.</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

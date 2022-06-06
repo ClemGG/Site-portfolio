@@ -230,12 +230,12 @@ nav .fa{
 
 
 
-#header-pf{
+#header-contact{
     background: transparent;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/icones/banniere.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/backgrounds/toulouse.jpg);
     
     /* background-repeat: no-repeat;*/
-    background-position: center;
+    background-position: 90%;
 }
 
 
@@ -298,7 +298,10 @@ h2{
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid white;
 }
+
+
 
 
 /*Le code dans ce @media sera appliqué à tous les écrans dont la largeur <= 700px*/
@@ -315,8 +318,42 @@ h2{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---- PORTFOLIO -----*/
 
+
+#header-pf{
+    background: transparent;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/backgrounds/node.jpg);
+    
+    /* background-repeat: no-repeat;*/
+    background-position: center;
+}
 
 
 
@@ -456,4 +493,16 @@ h2{
         font-size: 20px;
         opacity: 1;
     }
+}
+
+
+/*ABOUT*/
+
+
+#header-about{
+    background: transparent;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/backgrounds/etude.jpg);
+    
+    /* background-repeat: no-repeat;*/
+    background-position: center;
 }
