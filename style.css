@@ -542,14 +542,20 @@ h2{
 }
 
 .about-col img{
+    width: 55%;
 }
 
-.about-col p{
+.about-group p{
     text-align: justify;
+    font-size: 20px;
 }
 
 
-#about-presentation{
+.text-center{
+    text-align: center;
+}
+
+.text-presentation{
     font-size: 45px;
 }
 
