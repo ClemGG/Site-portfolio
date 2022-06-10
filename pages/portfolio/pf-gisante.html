@@ -1,0 +1,178 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="pfpage-header" id="header-pfpage-gisante">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../about.html">À PROPOS</a></li>
+                    <li><a href="../portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-pfpage-title">
+            <h1>GISANTE JEANNE DE MANTES</h1>
+            <p class="text-center text-presentation">
+                Une commission professionnelle pour le musée des Augustins de Toulouse.
+            </p>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="pfpage">
+<!--         
+        <div class="pfpage-citation">
+            <p class="text-center text-margin">
+                <span class="quote">‟</span>&emsp;&emsp;Soirée spéciale James HOCK!<br><br>
+                Venez participer à la soirée horreur pour la sortie <br> du 10ème film du célèbre réalisateur !<br>
+                &emsp;&emsp;&emsp;&emsp;Arriverez vous à tenir le coup ?&emsp;&emsp;<span class="quote">„</span><br><br>
+
+                &emsp;&emsp;Evoluez dans un cinéma angoissant datant des années 30.
+                Votre seule arme sera les cameras de surveillance.<br>
+                Attention, pour survivre, ne comptez pas seulement sur vos sens...
+            </p>
+        </div> -->
+
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>DESCRIPTION</h2>
+            </div>
+
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <p class="text-margin">
+                        <span class="text-bold">Développement :</span> <br><br>
+                        Date de sortie : Septembre 2020<br>
+                        Moteur : Unity3D<br>
+                        Lien : <a href="https://github.com/ClemGG/Gisante-Jeanne-de-Mantes">Github</a><br>
+                        <br>
+                        &emsp;&emsp;Cette application tactile a été réalisée dans le cadre d'un stage intensif à Tataragne Interactive, une start-up
+                        toulousaine. Commandé par le Musée des Augustins, un célèbre musée toulousain, cette application retrace le cycle de la
+                        pierre tombale de l'aristocrate Jeanne de Mantes, de sa conception au XIIIè siècle à son excavation par Alexandre Dumège
+                        près de 500 ans plus tard, dévoilant de nombreux secrets et coutûmes de fabrication de l'époque.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>CAPTURES</h2>
+            </div>
+            
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <div class="col-img">
+                        <div><img src="../../images/gisante/img1.png"></div>
+                        <div><img src="../../images/gisante/img2.png"></div>
+                        <div><img src="../../images/gisante/img3.png"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>SUGGESTIONS</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="pf-as.html">
+                        <img src="../../images/as/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>LES AS DE LA JUNGLE</h3>
+                            <h4>2020<br>
+                                Aidez les As de la Jungle à retrouver les oeuvres volées de l'Abbaye-Ecole de Sorèze<br>
+                                pour déjouer les plans de l'affreux Vladimir !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="pf-hock.html">
+                        <img src="../../images/hock/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>HOCK CINÉMA</h3>
+                            <h4>2020<br>
+                                Évoluez dans un cinéma angoissant datant des années 30. <br>
+                                Pour survivre, ne comptez pas seulement sur vos sens...</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

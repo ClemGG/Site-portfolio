@@ -926,4 +926,28 @@ h2{
 
     background-repeat: no-repeat;
     background-size: 100%;
+}#header-pfpage-ascii-shader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/ascii-shader/pfimg.jpg);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-dialogue {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/dialogue/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-toon-shader {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/toon-shader/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-gisante {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/gisante/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
 }
