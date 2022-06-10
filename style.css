@@ -570,15 +570,15 @@ h2{
 .display-grid {
     display: grid;
     grid-template-columns: 60% 40%;
+    margin: 0 50px 50px 50px;
 }
 
 .about-col{
-    /* background-color: red; */
     margin: 0 20px 0 20px;
     flex-basis: 48%;
 }
 
-.about-col .col-img {
+.about-col .about-col-img {
     /* background-color: green; */
     display: grid;
     grid-template-columns: auto;
