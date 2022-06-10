@@ -903,4 +903,27 @@ h2{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 20%;
+}#header-pfpage-star {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/star/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-fungi {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/fungi/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-tank {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/tank/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-hack {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/hack/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
