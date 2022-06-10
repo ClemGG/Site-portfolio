@@ -34,7 +34,7 @@
             <source src="../videos/video accueil portfolio.mp4" type="video/mp4">
         </video>
 
-        <div class="home-title">
+        <div class="home-title reveal fade-bottom">
             <h1>Clément Guichard</h1>
             <p>Responsable de création, Programmeur Unity</p>
         
@@ -43,6 +43,34 @@
         </div>
 
     </section>
+
+
+    <!-- Ce script lance l'animation de défilement d'une section de la page -->
+    <script>
+        function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+
+                    //La hauteur de défilement à partir de laquelle l'élément
+                    //doit être visible.
+                    var elementVisible = 0;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } 
+                    else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+        window.addEventListener("scroll", reveal);
+
+            // To check the scroll position on page load
+            reveal();
+    </script>
+
 
 </body>
 

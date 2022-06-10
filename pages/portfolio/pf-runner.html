@@ -1,0 +1,177 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="pfpage-header" id="header-pfpage-runner">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../about.html">À PROPOS</a></li>
+                    <li><a href="../portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-pfpage-title">
+            <h1>PAINT RUNNER</h1>
+            <p class="text-center text-presentation">
+            Un Endless Runner sur le thème "Passage" réalisé pour l'Extra Credits Game Jam n°5.
+            </p>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="pfpage">
+<!--         
+        <div class="pfpage-citation">
+            <p class="text-center text-margin">
+                <span class="quote">‟</span>&emsp;&emsp;Soirée spéciale James HOCK!<br><br>
+                Venez participer à la soirée horreur pour la sortie <br> du 10ème film du célèbre réalisateur !<br>
+                &emsp;&emsp;&emsp;&emsp;Arriverez vous à tenir le coup ?&emsp;&emsp;<span class="quote">„</span><br><br>
+
+                &emsp;&emsp;Evoluez dans un cinéma angoissant datant des années 30.
+                Votre seule arme sera les cameras de surveillance.<br>
+                Attention, pour survivre, ne comptez pas seulement sur vos sens...
+            </p>
+        </div> -->
+
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>DESCRIPTION</h2>
+            </div>
+
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <p class="text-margin">
+                        <span class="text-bold">Développement :</span> <br><br>
+                        Date de sortie : Août 2019<br>
+                        Moteur : Unity3D<br>
+                        Plateforme : Windows<br>
+                        Lien : <a href="https://github.com/ClemGG/Extra-Credits-game-jam-n-5---Paint-Runner">Github</a>, <a href="https://quasar47.itch.io/paint-runner-extra-credits-game-jam-n-5">Itch.io</a><br>
+                        <br>
+                        <span class="text-bold">Gameplay :</span><br><br>
+                        &emsp;&emsp;Dans cet endless runner, mélangez les couleurs pour modifier votre vaisseau afin de briser les obstacles. Réalisé en
+                        deux jours dans le but de tester un script de recyclage de terrain infini.<br><br>
+                        (Ce jeu est accessible aux daltoniens)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>CAPTURES</h2>
+            </div>
+            
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <div class="col-img">
+                        <div><img src="../../images/runner/img1.png"></div>
+                        <div><img src="../../images/runner/img2.png"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>SUGGESTIONS</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="pf-star.html">
+                        <img src="../../images/star/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>SHINING STAR</h3>
+                            <h4>2019<br>
+                                Un jeu de réflexion et d'obstacles réalisé pour la GMTK Game Jam 2019.</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="pf-fungi.html">
+                        <img src="../../images/fungi/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>FUNGI PARTY</h3>
+                            <h4>2019<br>
+                                Rassasiez le vieux roi Fungi dans ce jeu d'arcade inspiré du cultissime Snake !</h4>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

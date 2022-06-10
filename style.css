@@ -10,6 +10,35 @@ body{
     background: black;
 }
 
+/*----- ANIMATIONS ON SCROLL -----*/
+
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 0.75s ease-out;
+}
+
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 /*----- INDEX -----*/
@@ -651,5 +680,227 @@ h2{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*PORTFOLIO PAGE TEMPLATE*/
 
+.pfpage-header{
+    /* background-color: red; */
+}
+
+.home-pfpage-title{
+    margin: 100px 0;
+    padding-bottom: 50px;
+}
+
+.home-pfpage-title {
+    text-align: center;
+    color: white;
+}
+
+.home-pfpage-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.home-pfpage-title p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #6b6b6b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pfpage-row {
+    justify-content: space-between;
+    margin: 0 50px 50px 50px;
+}
+
+
+.pfpage-col {
+    /* background-color: red; */
+    flex-basis: 48%;
+}
+
+.pfpage-col .col-img {
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.col-img div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55vh;
+}
+
+.col-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pfpage-group p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.pfpage-group .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pfpage-col .text-bold {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pfpage-group .text-margin {
+    margin: 0 20px 0 20px;
+}
+/* 
+
+.pfpage-citation{
+    font-size: 20px;
+    margin: 0 50px 50px 50px;
+}
+
+.pfpage-citation .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pfpage-citation .text-margin {
+    margin: 0 300px 0 300px;
+}
+
+.pfpage-citation .quote {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+} */
+
+
+@media(max-width: 700px) {
+
+    .home-pfpage-title{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .home-pfpage-title h1 {
+        font-size: 30px;
+    }
+
+    .home-pfpage-title p {
+        font-size: 20px;
+    }
+
+    .pfpage-group p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .pfpage-col .text-bold {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .pfpage-col .col-img {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+
+    .col-img div {
+        width: 100%;
+        height: 45vh;
+    }
+
+
+
+}
+
+
+/*----- CUSTOM PF PAGE HEADER -----*/
+#header-pfpage-as {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/as/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 20%;
+}#header-pfpage-hock {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/hock/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-rdrift {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/rdrift/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-runner {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/runner/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-tower {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/tower/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}#header-pfpage-zigomar {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url(images/zigomar/pfimg.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20%;
+}

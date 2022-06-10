@@ -1,0 +1,203 @@
+<!-- Ce site sert uniquement à créer des pages contenant tous les modèles
+     dont on aura besoin pour des sites futurs.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Guichard - Game designer & Programmeur</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/icones/logo_page.png"" type="image/png">
+    <!--Lie le css à la page web-->
+
+    <!--Change la typo du site, ajoutée ensuite dans le CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--Ajoute des boutons depuis une biblio en ligne pour ouvrir et fermer le menu des onglets-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section class="pfpage-header" id="header-pfpage-zigomar">
+
+        <!--"nav" désigne une section d'une page avec des éléments navigables 
+                        (avec des menus, des tables des matières, des index, etc.)-->
+        <nav>
+
+            <!--"div" regroupe le contenu. Il n'est pas utile en soi, il permet de plus facilement
+                            appliquer du style à un groupe d'objets.-->
+            <div class="nav-links" id="NavLinks">
+
+                <!--Bouton croix qui ferme le menu des onglets-->
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+
+                <!--"ul" est une liste, "li" est un élément d'une liste-->
+                <ul>
+                    <!--Crée un onglet pour chaque page-->
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../about.html">À PROPOS</a></li>
+                    <li><a href="../portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!--Bouton qui affiche le menu des onglets-->
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+
+        <div class="home-pfpage-title">
+            <h1>HOCK CINEMA</h1>
+            <p class="text-center text-presentation">
+            Évoluez dans un cinéma angoissant datant des années 30.<br>
+            Pour survivre, ne comptez pas seulement sur vos sens...
+            </p>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="pfpage">
+<!--         
+        <div class="pfpage-citation">
+            <p class="text-center text-margin">
+                <span class="quote">‟</span>&emsp;&emsp;Soirée spéciale James HOCK!<br><br>
+                Venez participer à la soirée horreur pour la sortie <br> du 10ème film du célèbre réalisateur !<br>
+                &emsp;&emsp;&emsp;&emsp;Arriverez vous à tenir le coup ?&emsp;&emsp;<span class="quote">„</span><br><br>
+
+                &emsp;&emsp;Evoluez dans un cinéma angoissant datant des années 30.
+                Votre seule arme sera les cameras de surveillance.<br>
+                Attention, pour survivre, ne comptez pas seulement sur vos sens...
+            </p>
+        </div> -->
+
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>DESCRIPTION</h2>
+            </div>
+
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <p class="text-margin">
+                        <span class="text-bold">Développement :</span> <br><br>
+                        Date de sortie : Juin 2020<br>
+                        Moteur : Unity3D<br>
+                        Plateforme : Windows<br>
+                        Lien : <a href="https://github.com/ClemGG/Hock-Cinema">Github</a><br>
+                        <br>
+                        &emsp;&emsp;Hock Cinema est un projet étudiant réalisé au cours de notre dernière année de cursus en game design, sous les thèmes
+                        suivants : "Survival horror" et "Noir et Blanc".<br><br>
+                        &emsp;&emsp;Le jeu a été réalisé sous Unity 2019.3 par une équipe de 5 personnes :<br>
+                        &emsp;-&emsp;Clément Guichard (Programmation, Intégration)<br>
+                        &emsp;-&emsp;Nina Bourdonnec (Game Design, Level Design, Scenario)<br>
+                        &emsp;-&emsp;Anna Messerschmitt (Modelisation, Rig/Skin, Animation)<br>
+                        &emsp;-&emsp;Morgane Melilli (Concept Art, Scénario, Sound Design)<br>
+                        &emsp;-&emsp;Robin Rebière (Direction artistique, Modélisation, Eclairage, Intégration)
+                        <br>
+                        <br>
+                        <br>
+                        <span class="text-bold">Synopsis :</span><br><br>
+                        &emsp;&emsp;Soirée spéciale James HOCK!<br>
+                        Venez participer à la soirée horreur pour la sortie du 10 ème film du célèbre réalisateur !
+                        Arriverez vous à tenir le coup ?<br><br>
+                        &emsp;&emsp;Evoluez dans un cinéma angoissant datant des années 30. 
+                        Votre seule arme sera les cameras de surveillance.<br>
+                        Attention, pour survivre, ne comptez pas seulement sur vos sens...
+                        <br>
+                        <br>
+                        <br>
+                        <span class="text-bold">Gameplay :</span><br><br>
+                        &emsp;&emsp;Survivez à travers un cinéma hanté dans ce jeu de survie à la première personne et retrouvez la trace de votre ami
+                        disparu. Réparez les caméras de surveillance pour traquer la position de vos poursuivants, des monstres sortis tout
+                        droit d'anciens films d'horreur qui n'ont pas les meilleures intentions...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pfpage-group">
+            <div class="pf-title">
+                <h2>CAPTURES</h2>
+            </div>
+            
+            <div class="pfpage-row">
+                <div class="pfpage-col">
+                    <div class="col-img">
+                        <div><img src="../../images/hock/img1.png"></div>
+                        <div><img src="../../images/hock/img2.jpg"></div>
+                        <div><img src="../../images/hock/img3.png"></div>
+                        <div><img src="../../images/hock/img4.png"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="pf-group">
+            <div class="pf-title">
+                <h2>SUGGESTIONS</h2>
+            </div>
+            <ul class="pf-grid">
+                <li class="pf-btn">
+                    <a href="pf-zigomar.html">
+                        <img src="../../images/zigomar/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>MISSION ZIGOMAR</h3>
+                            <h4>2020<br>
+                                En route pour les musées de la ville de Paris ! Parcourez l'histoire de France <br>
+                                et tentez de déjouer les plans du terrible Zigomar !</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="pf-btn">
+                    <a href="pf-hack.html">
+                        <img src="../../images/hack/pfimg.png">
+                        <div class="pf-layer">
+                            <h3>HACK THE PLANET</h3>
+                            <h4>2019<br>
+                                Une révolution se prépare. Cette République vacillante veut faire taire <br>
+                                les voix dissidentes. Mais les choses ne doivent pas forcément en être ainsi...</h4>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!--Ce script cache les nav links sur mobile-->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+        function HideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
