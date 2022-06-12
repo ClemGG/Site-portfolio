@@ -5,10 +5,10 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Clément Guichard - Game designer & Programmeur</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="../images/icones/logo_page.png"" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icones/logo_page.png"" type="image/png">
     <!--Lie le css à la page web-->
 
     <!--Change la typo du site, ajoutée ensuite dans le CSS-->
@@ -80,12 +80,17 @@
                 <h2>Ou contactez-moi par mail !</h2>
 
                 <!--Crée une interface pour laisser le client envoyer des messages-->
-                <form class="comment-form" action="../form-handler.php" method="post">
+                <form class="comment-form" action="form-handler.php" method="post">
                     <!-- <form  action="form-handler.php" method="post"> -->
                     <input type="text" name="name" placeholder="Votre nom..." required>
                     <input type="email" name="email" placeholder="Votre adresse mail..." required>
                     <input type="text" name="subject" placeholder="Objet..." required>
                     <textarea rows="8" name="message" placeholder="Votre message..." required></textarea>
+
+                    <!-- Ce champ arrête les pourriels et est invisible aux clients -->
+                    <label class="description">Description</label>
+                    <input class="description" name="description" placeholder="nom@domaine.com">
+
                     <button type="submit" class="btn">ENVOYER</button>
                 </form>
     
@@ -104,6 +109,7 @@
             navLinks.style.left = "-200px";
         }
     </script>
+
 
 </body>
 

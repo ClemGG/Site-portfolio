@@ -1,12 +1,17 @@
 <?php
+header("Content-Type: text/html;charset=UTF-8");
 
 $name = $_POST['name'];
 $email_visitor = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'info@yourwebsite.com'; //L'adresse mail du site. C'est lui qui va nous envoyer le formulaire
-$email_subject = 'New Form Submission';
+//Arrête les pourriels
+if ($_POST['description'] != "") { die(); }
+if ( ! isset($_POST['description']) ) { die(); }
+
+$email_from = 'info@clementguichard.com'; //L'adresse mail du site. C'est lui qui va nous envoyer le formulaire
+$email_subject = 'Contact depuis mon site portfolio';
 $email_body = "User name: $name.\n".
              "Email: $email_visitor.\n".
              "Subject: $subject.\n".

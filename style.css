@@ -348,7 +348,10 @@ h2{
 }
 
 
-
+/*Ce champ arrête les pourriels et est invisible aux clients*/
+.comment-form>.description {
+    display: none;
+}
 
 
 
